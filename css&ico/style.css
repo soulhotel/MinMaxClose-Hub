@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 2px; /* Add margin to all sides */
+}
+
+button:hover {background-color: #1b1b1b;}
+
+button:active {transform: scale(0.95);}
+
+.resizeico,
+.minico,
+.closeico {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    border-radius: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Background images */
+.resizeico { background-image: url("max.png"); }
+.minico { background-image: url("min.png"); }
+.closeico { background-image: url("close.png"); }

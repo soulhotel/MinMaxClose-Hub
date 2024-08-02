@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Min Max Close - Hub",
+  "version": "3.4",
+  "description": "3 in 1 button hub helps replace your Minimize, Maximize/Resize, and Close Buttons. Fellow Hobbyist will find this useful on their Firefox CSS endeavors. Repackaged Script from https://github.com/dhanushl0l",
+  "icons": {
+    "48": "css&ico/icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "css&ico/icon.png"
+    }
+  },
+  "background": {
+    "scripts": [
+      "popup.js"
+    ],
+    "persistent": false
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "minmaxclose@soulhotel.net"
+    }
+  }
+}
